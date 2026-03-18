@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Panel Policía</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<img src="img/logo.png" class="sidebar-logo" id="logoInicio">
+
+<nav>
+
+<a data-section="inicio">
+<i class="fa-solid fa-house"></i> Inicio
+</a>
+
+<a data-section="oficiales">
+<i class="fa-solid fa-user-shield"></i> Oficiales
+</a>
+
+<a data-section="patrullas">
+<i class="fa-solid fa-car"></i> Patrullas
+</a>
+
+<a data-section="eyos">
+<i class="fa-solid fa-building-shield"></i> Eyos
+</a>
+
+<a data-section="miranda">
+<i class="fa-solid fa-scale-balanced"></i> Miranda
+</a>
+
+<a data-section="radiales">
+<i class="fa-solid fa-tower-broadcast"></i> Códigos Radiales
+</a>
+
+<a data-section="penales">
+<i class="fa-solid fa-gavel"></i> Códigos Penales
+</a>
+
+<a data-section="ascensos">
+<i class="fa-solid fa-arrow-up"></i> Ascensos
+</a>
+
+<a data-section="descensos">
+<i class="fa-solid fa-arrow-down"></i> Disciplina
+</a>
+
+<a data-section="semana">
+<i class="fa-solid fa-star"></i> Oficial Semana
+</a>
+
+</nav>
+
+</div>
+
+
+<div class="main">
+
+<header>
+<h1 id="titulo">Inicio</h1>
+</header>
+
+
+<section id="inicio" class="section active">
+
+<div class="cards">
+
+<div class="card">
+<h3>Oficiales activos</h3>
+<p id="totalOficiales"></p>
+</div>
+
+<div class="card">
+<h3>Patrullas</h3>
+<p id="totalPatrullas"></p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="oficiales" class="section">
+
+<div class="card">
+
+<h2>Oficiales en planilla</h2>
+
+<input id="buscarOficial" placeholder="Buscar oficial..." class="buscador">
+
+<select id="filtroRango" class="buscador">
+
+<option value="">Todos los rangos</option>
+
+<option>Director General</option>
+<option>Mayor General</option>
+<option>Brigadier General</option>
+<option>Supervisor PONAL</option>
+
+<option>Coronel</option>
+<option>Teniente Coronel</option>
+<option>Mayor</option>
+<option>Capitán</option>
+<option>Teniente</option>
+<option>Subteniente</option>
+
+<option>Sargento Primero</option>
+<option>Sargento Segundo</option>
+<option>Cabo Primero</option>
+<option>Cabo Segundo</option>
+
+<option>Comisario</option>
+<option>Subcomisario</option>
+<option>Intendente Jefe</option>
+<option>Intendente</option>
+<option>Subintendente</option>
+<option>Patrullero</option>
+<option>Auxiliar</option>
+
+</select>
+
+<table id="tablaOficiales">
+
+<tr>
+<th>Nombre</th>
+<th>Rango</th>
+<th>Placa</th>
+<th>División</th>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+
+<section id="patrullas" class="section">
+
+<div class="card">
+
+<h2>Patrullas</h2>
+
+<table id="tablaPatrullas">
+
+<tr>
+<th>Código</th>
+<th>Vehículo</th>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+
+<section id="eyos" class="section">
+
+<div class="card">
+
+<h2>Divisiones Policiales</h2>
+
+<ul class="lista">
+
+<lib>SIN DIVISION - eyo [PONAL] | #0226 | [Rango] | Radio✔ | GPS✔ | GO-PRO | Placa Visible | Uniforme Oficial | Chaleco K-4.8 | Casco Táctico</lib>    
+<li>GAULA - eyo [GRATE GAULA] | [Apellido] | [Rango] | #[Placa] | GO-PRO | Panic | Casco K-4.8 | Escopeta/M4 en Pecho | Radio✔ | Chaleco Balístico | Rostro Cubierto</li>
+<li>GOES - eyo [GRATE GOES] | [Apellido] | [Rango] | #[Placa] | GO-PRO | Panic | Casco K-4.8 | Escopeta/M4 en Pecho | Radio✔ | Chaleco Balístico | Rostro Cubierto</li>
+<li>DIJIN - eyo [GRATE DIJIN] | CT-SA-BP | [Rango] | #[Placa] | GO-PRO | Panic | Casco K-4.8 | M4/ESCOPETA | Radio✔ | Chaleco Balístico | Rostro Cubierto</li>
+<li>AÉREA - eyo [GRATE AEREA] | [Apellido] | [Rango] | #[Placa] | GO-PRO | Panic | Casco K-4.8 | Escopeta/M4 en Pecho | Radio✔ | Chaleco Balístico | Rostro Cubierto</li>
+<li>MOTORIZADA - eyo [GAULA-MOROTIZADO] | [Apellido] | [Rango] | #[Placa] | GO-PRO | Panic | Casco K-4.8 | Escopeta/M4 en Pecho | Radio✔ | Chaleco Balístico | Rostro Cubierto</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<section id="miranda" class="section">
+
+<div class="card">
+
+<h2>Derechos Miranda</h2>
+
+<p>
+
+Usted queda detenido por el presunto delito de [mencionar el delito, ej. robo]. 
+
+</p>
+
+A partir de este momento, tiene derecho a:
+</p>
+
+Guardar silencio: No está obligado a declarar, responder preguntas ni a testificar contra sí mismo.
+</p>
+
+Uso de sus palabras: Todo lo que diga puede ser utilizado en su contra en un tribunal.
+</p>
+
+Asistencia de un abogado: Derecho a solicitar un abogado privado o a que se le asigne uno público inmediatamente, antes de cualquier interrogatorio.
+</p>
+
+Comunicación: Derecho a informar a un familiar, compañero o persona de su confianza sobre su detención y lugar de traslado.
+</p>
+
+Atención médica: Derecho a un reconocimiento médico si se siente mal o si ha sufrido lesiones.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section id="radiales" class="section">
+
+<div class="card">
+
+<h2>Códigos Radiales</h2>
+
+<table id="tablaRadiales">
+
+<tr>
+<th>Código</th>
+<th>Significado</th>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+
+<section id="penales" class="section">
+
+<div class="card">
+
+<h2>Códigos Penales</h2>
+
+<table id="tablaPenales">
+
+<tr>
+<th>Código</th>
+<th>Delito</th>
+<th>Multa</th>
+</tr>
+
+</table>
+
+</div>
+
+</section>
+
+
+<section id="ascensos" class="section">
+
+<div class="card">
+
+<h2>Historial de Ascensos</h2>
+
+<ul id="listaAscensos"></ul>
+
+</div>
+
+</section>
+
+
+<section id="descensos" class="section">
+
+<div class="card">
+
+<h2>Historial Disciplinario</h2>
+
+<ul id="listaDisciplina"></ul>
+
+</div>
+
+</section>
+
+
+<section class="oficial-semana">
+  <div class="contenedor-oficial">
+    <div id="oficialSemanaCard"></div>
+    <div id="perfilOficial"></div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
