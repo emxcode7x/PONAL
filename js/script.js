@@ -179,9 +179,9 @@ disciplina:[
 },
 
 {
-nombre:"Jayner Char",
+nombre:"Jayden Char",
 rango:"Mayor General",
-placa:"POR DEFINIR",
+placa:"0007",
 division:"ASUNTOS INTERNOS",
 edad:29,
 ingreso:"2019",
